@@ -63,7 +63,7 @@ class $modify(Editor, EditorUI) {
                 
                 triggerGroups.insert(target);
                 triggerGroups.insert(center);
-                triggers.emplace_back(trigger, target, center);
+                triggers.push_back(TriggerData(trigger, target, center));
             }
         }
         triggerGroups.erase(0);
