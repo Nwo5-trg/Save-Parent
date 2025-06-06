@@ -1,0 +1,20 @@
+{
+	"geode": "4.5.0",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "nwo5.save_parent",
+	"name": "Save Parent",
+	"version": "v1.0.0",
+	"developer": "Nwo5",
+	"description": "Save group parent with build helper & paste.",
+	"resources": {"sprites": ["resources/*.png"]},
+	"links": {"source": "https://github.com/Nwo5-trg/Save-Parent"},
+	"tags": ["editor", "utility", "enhancement", "offline"],
+	"dependencies": {
+		"geode.node-ids": ">=1.20.1"
+	}
+}
