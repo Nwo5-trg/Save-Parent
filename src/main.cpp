@@ -8,6 +8,9 @@ struct TriggerData {
     EffectGameObject* trigger;
     int targetGroup = 0;
     int centerGroup = 0;
+
+    TriggerData(EffectGameObject* obj, int target, int center)
+        : trigger(obj), targetGroup(target), centerGroup(center) {}
 };
 
 std::unordered_map<int, int> groupParentObjs;
@@ -63,7 +66,7 @@ class $modify(Editor, EditorUI) {
                 
                 triggerGroups.insert(target);
                 triggerGroups.insert(center);
-                triggers.push_back(TriggerData(trigger, target, center));
+                triggers.emplace_back(trigger, target, center);
             }
         }
         triggerGroups.erase(0);
